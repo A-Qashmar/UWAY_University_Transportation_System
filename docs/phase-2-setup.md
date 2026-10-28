@@ -1,18 +1,31 @@
 # Phase 2 Setup Guide
 
-The project Gantt schedules Phase 2 from September 28 through October 6, 2026:
+The Gantt schedules initial setup for September 28–October 6 and PR2 for October 26–31, 2026. Its progress cells and displayed Today date are stale and need updating before the PR2 review:
 
 | Task | Planned dates | Foundation status |
 | --- | --- | --- |
 | Repository and development environment setup | Sep 28–Oct 2 | Repository structure and setup docs prepared; GitHub remote still needs team account/repository |
-| Backend and database setup | Sep 29–Oct 5 | API scaffold, PostgreSQL compose file, EF Core provider and connection configuration prepared |
+| Backend and database setup | Sep 29–Oct 5 | PostgreSQL Compose setup, EF Core schema/migrations, database health check, and route/stop/fleet/trip APIs are implemented |
 | Initial mobile and Admin project structure | Sep 30–Oct 6 | Flutter single-app structure and React/Vite shell prepared |
 
-## Before the team runs it
+## Current practical prototype status
 
-1. Install Flutter and Docker Desktop if not already installed.
-2. Configure a local PostgreSQL password and replace the API development connection string, or store it with .NET user secrets.
-3. Run the restore/build and client checks shown in the root README.
-4. Create a GitHub repository under the team's account and add it as the Git remote when the team is ready.
+The React Admin dashboard has forms for stops, routes, buses, drivers, and trips. The Passenger app was observed on Android with a PostgreSQL-backed scheduled trip: it loaded the trip and route stops, created and changed a Trip Intent drop-off, cancelled the intent, and loaded the empty inbox. The Driver screen and assigned-trip API exist in source; the API already running on 5251 is older and returns 404 for GET /api/trips/assigned, while the current-source build on 5252 returns only trips assigned to the Driver ID. A fresh Driver APK and live start/end check remain.
 
-No domain tables or feature workflows are created in Phase 2. Keep schema and API contracts aligned with the agreed report before feature implementation begins.
+For local demonstration, keep PostgreSQL and the API on the existing verified ports: PostgreSQL `55432`, API `5251`. Set `Uway__EnableDevelopmentHeaderAuthentication=true` only in Development. The Admin web app currently permits `http://localhost:5173`; the Flutter Android emulator uses `adb reverse tcp:5251 tcp:5251`. Development headers are not production sign-in.
+
+The frontend has since been extended with Admin record editing/deletion, trip cancellation, search and status filters, an active-trip map with capacity status, an OpenStreetMap Passenger tracking view, and opt-in foreground Driver GPS. The source-stop map remains in the Admin dashboard. A new Flutter dependency resolution/build and live verification of GPS, SignalR on-device behavior, and notification read-state are still required. No database fields or migrations were added for these UI changes.
+
+The schema covers routes, stops, buses, drivers, trips, and Trip Intent. Management endpoints cover routes, stops, buses, and drivers. Scheduled trips support driver start/end, reasoned delays and cancellation, and guarded state transitions. Passengers can create and cancel their own Trip Intent, select a route stop for drop-off, and change that stop until the trip ends. The active intent count provides an expected rider count; it is not a seat reservation or boarding confirmation. Capacity status uses that count against assigned bus capacity: 80% is nearly full, equality is full, and a larger count is over capacity. The assigned driver can store a timestamped near-full report during an in-progress trip.
+
+Passenger trip browsing uses the existing read-only `GET /api/trips` and `GET /api/trips/{id}` actions. Passengers see Scheduled and Started trips plus Finished trips from the last 14 days; delays and cancellations are alerts on the trip, not statuses. Passenger responses hide driver and bus assignment identifiers. Admins retain full trip reads and assigned Drivers retain their existing detail access. These permissions do not permit passengers to create, change, delete, start, delay, end, or cancel trips. Route/stop GET and live-location GET/SignalR access remain available to authorized Passengers independently of Trip Intent.
+
+For live tracking, an assigned Driver can send a latitude and longitude while their trip is in progress. PostgreSQL stores only that trip's latest location and the API receive timestamp. Any authorized Passenger can read and subscribe to the current point for an in-progress trip, whether or not they have an active Trip Intent. The assigned Driver and Admins can also read/subscribe under their existing rules. The SignalR hub at `/hubs/trip-locations` provides authorized trip subscriptions and sends `LocationUpdated` after a valid location is saved. Trip Intent is separate: it affects expected rider count and future passenger-specific notifications, not location access. The REST GET endpoint remains the recovery path after reconnecting; no location history or simulated GPS is used. Development-only loopback headers remain the only local identity mechanism; they are not safe for deployment. Keep further schema and API changes aligned with the agreed report.
+
+The notification foundation stores a passenger inbox in PostgreSQL. Trip start, delay, cancellation, and completion events create entries for active Trip Intents. A cancelled intent does not receive later events. After a real Driver location update, the API checks the passenger's selected route stop; if the stop has coordinates and is within 500 meters, it creates one approaching-stop notification for that intent/stop. The unique intent/event key prevents duplicates. Passengers retrieve their own inbox with `GET /api/notifications` and can mark an entry read. The Android inbox empty state was observed, but delivery and mark-as-read were not exercised in this review. This is persisted API delivery, not push delivery. Live-location access remains available to authorized Passengers regardless of Trip Intent.
+
+### Source map and database import status
+
+The Admin source map uses the provided GeoJSON without changing coordinates or drawing route lines. The API is prepared to retain each imported point's original `SourceGroup` and a stable `SourceKey` based on group, original source name, and six-decimal coordinates. The migration adds only nullable columns and a unique nullable key index, leaving existing Stops and route links intact. The Stops response adds nullable `sourceGroup` without changing request payloads.
+
+The Development-only importer is insert-only and explicitly invoked after the migration; it reports valid, added, existing, duplicate, and invalid counts, skips repeated source points and exact untagged manual-stop matches, and never modifies/deletes existing records or creates route-stop order. The API project packages the GeoJSON beside its build/publish output, preferring `data/source-map/` and falling back to the current project-root file or Admin static copy. At the time of this review, `data/source-map/` is absent; the root GeoJSON and Admin copy are byte-identical. Neither migration nor import has been applied/run against the current database. No source group is linked to a Route until confirmed route direction and stop sequence are supplied.

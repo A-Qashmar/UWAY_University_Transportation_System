@@ -27,3 +27,10 @@ npm-debug.log*
 .vs/
 .DS_Store
 Thumbs.db
+
+# Local backups, database dumps and scratch output
+_backup_*/
+**/_backup_*/
+*.sql
+.restore-profile/
+mobile/out.txt

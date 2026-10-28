@@ -1,0 +1,30 @@
+.trip-page { display: grid; gap: 16px; }
+.trip-page-head { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
+.trip-page-title { flex: 1 1 280px; }
+.trip-page-title h2 { margin: 0 0 8px; font-size: 24px; letter-spacing: -.02em; }
+.trip-page-badges { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.trip-page-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.trip-alert { padding: 12px 15px; border-radius: 12px; font-size: 13px; font-weight: 600; }
+.trip-alert-cancelled { background: #fdecea; color: #9b322c; border: 1px solid #f3c4c0; }
+.trip-alert-delayed { background: #fff4dd; color: #8a5d12; border: 1px solid #f0d9a4; }
+.trip-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.info-card { display: grid; gap: 5px; align-content: start; padding: 15px 17px; border: 1px solid #e0eae7; border-radius: 14px; background: white; transition: transform .18s ease, box-shadow .18s ease; }
+.info-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #153a4014; }
+.info-card > span { color: #738787; font-size: 12px; }
+.info-card > strong { font-size: 16px; color: #173a40; }
+.info-card small { color: #738787; font-size: 11px; }
+.call-button { display: inline-flex; align-items: center; gap: 7px; width: fit-content; margin-top: 4px; padding: 8px 13px; border-radius: 999px; background: #176b66; color: white; font-size: 12px; font-weight: 700; text-decoration: none; transition: background .18s ease, transform .15s ease, box-shadow .18s ease; }
+.call-button:hover { background: #105650; transform: translateY(-1px); box-shadow: 0 6px 14px #176b6633; }
+.trip-block { padding: 18px; border: 1px solid #e0e9e7; border-radius: 14px; background: white; }
+.trip-block h3 { margin: 0 0 12px; font-size: 16px; }
+.trip-map { height: 380px; border-radius: 12px; background: #edf2f0; }
+.map-note { margin: 9px 0 0; font-size: 12px; }
+.stop-list { margin: 0; padding-left: 22px; display: grid; gap: 5px; font-size: 13px; color: #355558; columns: 2; }
+@media (max-width: 650px) { .stop-list { columns: 1; } .trip-map { height: 300px; } }
+
+.trip-map-wrap { position: relative; }
+.follow-bus { position: absolute; top: 12px; right: 12px; z-index: 1000; border: 0; border-radius: 999px; padding: 8px 14px; background: #176b66; color: #fff; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.25); }
+.uway-pin, .uway-bus { background: none; border: 0; }
+.uway-bus { position: relative; }
+.uway-bus .halo { position: absolute; inset: 0; border-radius: 50%; background: rgba(23,107,102,.2); }
+.uway-bus .badge { position: absolute; left: 6px; top: 6px; width: 44px; height: 44px; border-radius: 14px; background: #176b66; border: 3px solid #fff; display: grid; place-items: center; box-shadow: 0 3px 10px rgba(0,0,0,.4); }

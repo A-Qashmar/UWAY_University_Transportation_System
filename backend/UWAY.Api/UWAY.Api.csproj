@@ -4,11 +4,19 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UwaySourceStopsGeoJson Condition="Exists('$(MSBuildProjectDirectory)\..\..\data\source-map\UWAY_stops_coordinates.geojson')">$(MSBuildProjectDirectory)\..\..\data\source-map\UWAY_stops_coordinates.geojson</UwaySourceStopsGeoJson>
+    <UwaySourceStopsGeoJson Condition="'$(UwaySourceStopsGeoJson)' == '' and Exists('$(MSBuildProjectDirectory)\..\..\UWAY_stops_coordinates.geojson')">$(MSBuildProjectDirectory)\..\..\UWAY_stops_coordinates.geojson</UwaySourceStopsGeoJson>
+    <UwaySourceStopsGeoJson Condition="'$(UwaySourceStopsGeoJson)' == '' and Exists('$(MSBuildProjectDirectory)\..\..\admin\public\data\UWAY_stops_coordinates.geojson')">$(MSBuildProjectDirectory)\..\..\admin\public\data\UWAY_stops_coordinates.geojson</UwaySourceStopsGeoJson>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(UwaySourceStopsGeoJson)' != ''">
+    <Content Include="$(UwaySourceStopsGeoJson)" Link="source-map/UWAY_stops_coordinates.geojson"
+             CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

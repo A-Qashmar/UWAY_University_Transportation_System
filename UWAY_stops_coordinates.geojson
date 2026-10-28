@@ -1,0 +1,1554 @@
+{
+  "type": "FeatureCollection",
+  "name": "UWAY University City bus stop points (review copy)",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.371695,
+          25.334213
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "محطة جمعية الشارقة التعاونية",
+        "name_en": "Next to the Sharjah Cooperative Society",
+        "source_name": "Next to the Sharjah Cooperative Society | محطة جمعية الشارقة التعاونية",
+        "description": "description: street: شارع العروبة‎‎‎ description: From Stop Point to The University City من نقطة التجمع إلى المدينة الجامعية: - 06:15 AM صباحاً -AM 07:45 صباحاً -AM 08:15 صباحاً -AM 08:45 صباحاً - AM09:15 صباحاً -AM 09:45 صباحاً‎‎‎‎‎‎‎ street: شارع العروبة",
+        "source_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.371131,
+          25.330038
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام محطة خدمة السيارات",
+        "name_en": "In front of the Car Service Station",
+        "source_name": "In front of the Car Service Station | أمام محطة خدمة السيارات",
+        "description": "description: street: شارع الخان‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 07:45 صباحاً - 08:15 صباحاً - 08:45 صباحاً - 09:15 صباحاً - 09:45 صباحاً‎‎‎ street: شارع الخان",
+        "source_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37174,
+          25.329886
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام محطة أدنوك",
+        "name_en": "In front of Adnoc Station ‎‎‎‎‎‎‎‎‎‎‎",
+        "source_name": "In front of Adnoc Station ‎‎‎‎‎‎‎‎‎‎‎| أمام محطة أدنوك",
+        "description": "description: street: شارع الخان‎‎‎‎‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 07:45 صباحاً - 08:15 صباحاً - 08:45 صباحاً - 09:15 صباحاً - 09:45 صباحاً‎‎ ‎‎‎‎‎‎ street: شارع الخان",
+        "source_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.381562,
+          25.315974
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام مصنع الحلبي",
+        "name_en": "In front of Alhalabi Factory‎‎‎‎‎‎",
+        "source_name": "In front of Alhalabi Factory‎‎‎‎‎‎ | أمام مصنع الحلبي",
+        "description": "description: street: شارع جمال عبدالناصر‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع جمال عبدالناصر",
+        "source_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.383899,
+          25.318364
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "Gref Mandi Restaurant",
+        "name_en": "مطعم جريف للمندي",
+        "source_name": "مطعم جريف للمندي | Gref Mandi Restaurant",
+        "description": "description: street: شارع جمال عبدالناصر‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع جمال عبدالناصر",
+        "source_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.385486,
+          25.32012
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام حلويات الشامية",
+        "name_en": "In front of Al-Shamia Sweets‎",
+        "source_name": "In front of Al-Shamia Sweets‎ | أمام حلويات الشامية",
+        "description": "description: street: شارع جمال عبدالناصر‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع جمال عبدالناصر",
+        "source_order": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3884364,
+          25.3232514
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "مقابل حديقة المجاز",
+        "name_en": "In front of Al-Majaz Park ‎",
+        "source_name": "In front of Al-Majaz Park ‎| مقابل حديقة المجاز",
+        "description": "description: street: شارع جمال عبدالناصر‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع جمال عبدالناصر",
+        "source_order": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.391177,
+          25.331072
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "مقابل مطعم الكلحة",
+        "name_en": "In front of Al-Kalhah Restaurant",
+        "source_name": "In front of Al-Kalhah Restaurant | مقابل مطعم الكلحة",
+        "description": "description: street: شارع جمال عبدالناصر‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع جمال عبدالناصر",
+        "source_order": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.386547,
+          25.33787
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "In front of KFC",
+        "name_en": "أمام مطعم كنتاكي",
+        "source_name": "أمام مطعم كنتاكي | In front of KFC",
+        "description": "description: street: شارع الكورنيش‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع الكورنيش",
+        "source_order": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3870176,
+          25.3488178
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "مسجد الملك فيصل",
+        "name_en": "In front of King Faisal Mosque",
+        "source_name": "In front of King Faisal Mosque | مسجد الملك فيصل",
+        "description": "description: street: شارع الملك عبدالعزيز‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎ street: شارع الملك عبدالعزيز",
+        "source_order": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.392187,
+          25.345531
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام بنك المشرق",
+        "name_en": "In front of Al-Mashreq Bank",
+        "source_name": "In front of Al-Mashreq Bank | أمام بنك المشرق",
+        "description": "description: street: شارع الملك عبدالعزيز‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎ street: شارع الملك عبدالعزيز",
+        "source_order": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3970298,
+          25.3443917
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام ميغامول الشارقة",
+        "name_en": "In front of Mega Mall ‎",
+        "source_name": "In front of Mega Mall ‎| أمام ميغامول الشارقة",
+        "description": "description: street: شارع الإستقلال‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع الإستقلال",
+        "source_order": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3997116,
+          25.3498233
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "Opposite Sindbad Bakery",
+        "name_en": "مقابل مخبز السندباد",
+        "source_name": "مقابل مخبز السندباد | Opposite Sindbad Bakery",
+        "description": "description: street: شارع الإستقلال‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع الإستقلال",
+        "source_order": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4059811,
+          25.3554886
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام سوبرماركت جيسكو",
+        "name_en": "In front of Jesco Supermarket",
+        "source_name": "In front of Jesco Supermarket | أمام سوبرماركت جيسكو",
+        "description": "description: street: شارع الشيخ زايد‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎ street: شارع الشيخ زايد",
+        "source_order": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.42186,
+          25.345328
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "Al-Sahabah Mosque",
+        "name_en": "أمام مسجد الصحابة",
+        "source_name": "أمام مسجد الصحابة | Al-Sahabah Mosque",
+        "description": "description: street: شارع الشيخ زايد‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً‎‎‎‎‎‎‎‎‎ street: شارع الشيخ زايد",
+        "source_order": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.523497,
+          25.479658
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "منطقة الحمرية - بجوار المسجد",
+        "name_en": "Hamriyah Area next to the Mosque",
+        "source_name": "Hamriyah Area next to the Mosque | منطقة الحمرية - بجوار المسجد",
+        "description": "description: street: description: فترة الصباح (من المحطة الى المدينة الجامعية) : - 06:45 صباحاً‎‎‎‎‎ street:",
+        "source_order": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.371469,
+          25.309367
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "Al-Taawun Roundabout",
+        "name_en": "ميدان التعاون",
+        "source_name": "ميدان التعاون | Al-Taawun Roundabout",
+        "description": "description: street: description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 05:50 صباحاً - 07:45 صباحاً - 08:45 صباحاً - 09:45 صباحاً‎‎‎‎‎ street:",
+        "source_order": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37634,
+          25.315807
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "سوبر ماركت أفاميا الشام",
+        "name_en": "In front of Afamia Al-Sham Supermarket",
+        "source_name": "In front of Afamia Al-Sham Supermarket | سوبر ماركت أفاميا الشام",
+        "description": "description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 05:50 صباحاً - 07:45 صباحاً - 08:45 صباحاً - 09:45 صباحاً‎ street:",
+        "source_order": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.370965,
+          25.326494
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "أمام الاتحاد لتأمين",
+        "name_en": "In front of Al-Etihad Insurance‎",
+        "source_name": "In front of Al-Etihad Insurance‎ | أمام الاتحاد لتأمين",
+        "description": "description: street: description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:00 صباحاً - 07:45 صباحاً - 08:45 صباحاً - 09:45 صباحاً‎‎‎‎‎‎ street:",
+        "source_order": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.380448,
+          25.320163
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "",
+        "name_en": "Old Expo",
+        "source_name": "Old Expo",
+        "description": "description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:15 صباحاً - 08:00 صباحاً - 08:30 صباحاً - 09:00 صباحاً - 09:30 صباحاً - 10:00 صباحاً street:",
+        "source_order": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3660055,
+          25.3060588
+        ]
+      },
+      "properties": {
+        "source_group": "King Faisal Route | خط الملك فيصل",
+        "name_ar": "محطة صيدلية ألفا",
+        "name_en": "In front of Alpha Al Seha Pharmacy",
+        "source_name": "In front of Alpha Al Seha Pharmacy | محطة صيدلية ألفا",
+        "description": "description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 05:50 صباحاً - 07:45 صباحاً - 08:45 صباحاً - 09:45 صباحاً‎ street:",
+        "source_order": 132
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4266167,
+          25.3932825
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "Rona Square",
+        "name_en": "ميدان رونا",
+        "source_name": "ميدان رونا | Rona Square",
+        "description": "description: street: شارع الشرق‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشرق",
+        "source_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.414513,
+          25.386643
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "أمام شرطة الحيرة",
+        "name_en": "In front of Al-Hira Police",
+        "source_name": "In front of Al-Hira Police | أمام شرطة الحيرة",
+        "description": "description: street: شارع الشرق‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎ street: شارع الشرق",
+        "source_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.408108,
+          25.383798
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "حديقة الفشت أمام",
+        "name_en": "In front of Al-Fisht Park",
+        "source_name": "In front of Al-Fisht Park | حديقة الفشت أمام",
+        "description": "description: street: شارع الشرق‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشرق",
+        "source_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4030685,
+          25.3760061
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "أمام سوبرماركت المدينة",
+        "name_en": "In front of Al-Madinah Supermarket",
+        "source_name": "In front of Al-Madinah Supermarket | أمام سوبرماركت المدينة",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.406842,
+          25.373751
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "بجوار أنجاد الشارقة",
+        "name_en": "In front of Al-Anjad Police",
+        "source_name": "In front of Al-Anjad Police | بجوار أنجاد الشارقة",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4112827,
+          25.3711055
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "Nasiriyah Station",
+        "name_en": "محطة الناصرية",
+        "source_name": "محطة الناصرية | Nasiriyah Station",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4153704,
+          25.3679687
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "In front of Shahoof Al-Fareej Restaurant",
+        "name_en": "أمام مسجد ابن باز - كافتيريا شاحوف الفريج",
+        "source_name": "أمام مسجد ابن باز - كافتيريا شاحوف الفريج | In front of Shahoof Al-Fareej Restaurant",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.418751,
+          25.365264
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "Before the traffic light",
+        "name_en": "قبل الإشارة الضوئية",
+        "source_name": "قبل الإشارة الضوئية | Before the traffic light",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎‎ description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.422426,
+          25.361449
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "After the traffic light",
+        "name_en": "بعد الإشارة الضوئية",
+        "source_name": "بعد الإشارة الضوئية | After the traffic light",
+        "description": "description: street: شارع الشيخ محمد بن صقر القاسمي‎ description: بين اشارة الرقة ودوار الثقافة - منطقة الرملة فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:30 صباحاً - 08:00 صباحاً - 09:00 صباحاً - 10:00 صباحاً‎‎ street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4256892,
+          25.3580182
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "أمام مكتب سمو الحاكم",
+        "name_en": "In front of HH the Ruler's office",
+        "source_name": "In front of HH the Ruler's office | أمام مكتب سمو الحاكم",
+        "description": "description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:40 صباحاً - 08:15 صباحاً - 09:15 صباحاً - 10:15 صباحاً street: شارع الشيخ محمد بن صقر القاسمي",
+        "source_order": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4257253,
+          25.3529984
+        ]
+      },
+      "properties": {
+        "source_group": "Al Heerah Route | خط الحيرة",
+        "name_ar": "Opposite to Sharjah TV",
+        "name_en": "مقابل تلفزيون الشارقة",
+        "source_name": "مقابل تلفزيون الشارقة | Opposite to Sharjah TV",
+        "description": "description: فترة الصباح، من نقطة التجمع إلى المدينة الجامعية: - 06:40 صباحاً - 08:15 صباحاً - 09:15 صباحاً - 10:15 صباحاً street: شارع الشيخ راشد بن صقر القاسمي",
+        "source_order": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.474651,
+          25.283234
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "UOS - M3",
+        "source_name": "UOS - M3",
+        "description": "nan",
+        "source_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.48056,
+          25.291245
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "UOS - W3",
+        "source_name": "UOS - W3",
+        "description": "nan",
+        "source_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.482804,
+          25.296264
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "UOS - Fine Arts",
+        "source_name": "UOS - Fine Arts",
+        "description": "nan",
+        "source_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.486406,
+          25.301524
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "UOS - Medical College",
+        "source_name": "UOS - Medical College",
+        "description": "nan",
+        "source_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.49079,
+          25.307864
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "AUS - Bus Station",
+        "source_name": "AUS - Bus Station",
+        "description": "nan",
+        "source_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.478897,
+          25.293722
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "HCT Building A",
+        "source_name": "HCT Building A",
+        "description": "12 , 01, 02, 05 , 06",
+        "source_order": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.470478,
+          25.284496
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "HCT Building B",
+        "source_name": "HCT Building B",
+        "description": "nan",
+        "source_order": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.465844,
+          25.299347
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "Al Qasimia - Men's",
+        "source_name": "Al Qasimia - Men's",
+        "description": "12 01 02 03 04",
+        "source_order": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.466454,
+          25.293714
+        ]
+      },
+      "properties": {
+        "source_group": "نقاط العودة | Returning Points",
+        "name_ar": "",
+        "name_en": "Qasimia - Women's",
+        "source_name": "Qasimia - Women's",
+        "description": "12 01 02 03 04",
+        "source_order": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.9665438323312,
+          25.3476520120973
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "مواقف حضانة سهيلة",
+        "name_en": "Suhaila Nursery Parking Area",
+        "source_name": "Suhaila Nursery Parking Area | مواقف حضانة سهيلة",
+        "description": "6:45 am",
+        "source_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8800188473369,
+          25.2790145482172
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Opposite of Dubai Islamic Bank",
+        "name_en": "مقابل بنك دبي الإسلامي",
+        "source_name": "مقابل بنك دبي الإسلامي | Opposite of Dubai Islamic Bank",
+        "description": "- 6:45 am - 9:00 am",
+        "source_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8181194316456,
+          25.277050320004
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 12 Al Dhaid Road",
+        "name_en": "جسر 12 شارع الذيد",
+        "source_name": "جسر 12 شارع الذيد | Bridge 12 Al Dhaid Road",
+        "description": "- 7:05 am - 9:05 am",
+        "source_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.7918152905257,
+          25.2768688053966
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 11 Al Dhaid Road",
+        "name_en": "جسر 11 شارع الذيد",
+        "source_name": "جسر 11 شارع الذيد | Bridge 11 Al Dhaid Road",
+        "description": "- 7:08 am - 9:08 am",
+        "source_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.7365150709725,
+          25.2752747437766
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 10 Al Dhaid Road",
+        "name_en": "جسر 10 شارع الذيد",
+        "source_name": "جسر 10 شارع الذيد | Bridge 10 Al Dhaid Road",
+        "description": "- 7:15 am - 9:15 am",
+        "source_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.6148670485252,
+          25.2940961327721
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 8 Al Dhaid Road",
+        "name_en": "جسر 8 شارع الذيد",
+        "source_name": "جسر 8 شارع الذيد | Bridge 8 Al Dhaid Road",
+        "description": "- 7:20 am - 9:20 am",
+        "source_order": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.5838851969655,
+          25.3068130058494
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 6 Al Dhaid Road",
+        "name_en": "جسر 6 شارع الذيد",
+        "source_name": "جسر 6 شارع الذيد | Bridge 6 Al Dhaid Road",
+        "description": "- 7:22 am - 9:22 am",
+        "source_order": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.5436959955602,
+          25.3155350502602
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Bridge 5 Al Dhaid Road",
+        "name_en": "جسر 5 شارع الذيد",
+        "source_name": "جسر 5 شارع الذيد | Bridge 5 Al Dhaid Road",
+        "description": "- 7:25 am - 9:25 am",
+        "source_order": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8893165721734,
+          25.1328026265043
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al Maleeha Ladies Club",
+        "name_en": "نادي سيدات مليحة",
+        "source_name": "نادي سيدات مليحة | Al Maleeha Ladies Club",
+        "description": "6:55 am",
+        "source_order": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.9578170896073,
+          25.1700720179694
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Hadera Ladies Park",
+        "name_en": "حديقة خضيرة للسيدات",
+        "source_name": "حديقة خضيرة للسيدات | Hadera Ladies Park",
+        "description": "6:35 am",
+        "source_order": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.954158783032,
+          25.0869598642687
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Shabiyat Akhaidher Mosque",
+        "name_en": "مسجد شعبية الخضر",
+        "source_name": "مسجد شعبية الخضر | Shabiyat Akhaidher Mosque",
+        "description": "6:45 am",
+        "source_order": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8805732883584,
+          25.1699852350477
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Shabiyat Bel Ejeed Mosque",
+        "name_en": "مسجد شعبية بالجيد - حمده",
+        "source_name": "مسجد شعبية بالجيد - حمده | Shabiyat Bel Ejeed Mosque",
+        "description": "7:00 am",
+        "source_order": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8766764343113,
+          25.169526088668
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Shaabiyat Saif Awadh Mosque",
+        "name_en": "مسجد شعبية سيف عوض - حمده",
+        "source_name": "مسجد شعبية سيف عوض - حمده | Shaabiyat Saif Awadh Mosque",
+        "description": "7:00 am",
+        "source_order": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.876544520446,
+          25.0106275861679
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al Thameed Ladies Club",
+        "name_en": "نادي سيدات الثميد",
+        "source_name": "نادي سيدات الثميد | Al Thameed Ladies Club",
+        "description": "6:55 am",
+        "source_order": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8434156154578,
+          25.0173184188564
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al-Bahais Roundabout",
+        "name_en": "دوار البحايص",
+        "source_name": "دوار البحايص | Al-Bahais Roundabout",
+        "description": "7:05 am",
+        "source_order": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8088795543848,
+          25.0401097609946
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "AlFaya Roudabout",
+        "name_en": "دوار الفايه",
+        "source_name": "دوار الفايه | AlFaya Roudabout",
+        "description": "7:10 am",
+        "source_order": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8050341091045,
+          25.0504137136729
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Mahafiz - AlFaya Roundabout",
+        "name_en": "دوار محافز - الفايه",
+        "source_name": "دوار محافز - الفايه | Mahafiz - AlFaya Roundabout",
+        "description": "7:15 am",
+        "source_order": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.7758067435481,
+          24.9705457162213
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al-Madam Ladies Club",
+        "name_en": "نادي سيدات المدام",
+        "source_name": "نادي سيدات المدام | Al-Madam Ladies Club",
+        "description": "6:55 am",
+        "source_order": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.7097651838135,
+          25.0635549276831
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Nazwa Roundabout",
+        "name_en": "دوار النزوى",
+        "source_name": "دوار النزوى | Nazwa Roundabout",
+        "description": "7:15 am",
+        "source_order": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8755108485691,
+          25.2961140183284
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al Dhaid Ladies Club",
+        "name_en": "نادي سيدات الذيد",
+        "source_name": "نادي سيدات الذيد | Al Dhaid Ladies Club",
+        "description": "7:00 am",
+        "source_order": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.878895645327,
+          25.2966824265707
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al Hisn Ladies Park",
+        "name_en": "حديقة الحصن للسيدات",
+        "source_name": "حديقة الحصن للسيدات | Al Hisn Ladies Park",
+        "description": "7:05 am",
+        "source_order": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8818987144863,
+          25.290149720247
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al-Mina Supermarket",
+        "name_en": "سوبرماركت الميناء",
+        "source_name": "سوبرماركت الميناء | Al-Mina Supermarket",
+        "description": "7:10 am",
+        "source_order": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.8755038782039,
+          25.2718391216426
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الوسطى",
+        "name_ar": "Al-Taiba Park",
+        "name_en": "حديقة الطيبة",
+        "source_name": "حديقة الطيبة | Al-Taiba Park",
+        "description": "7:20 am",
+        "source_order": 23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3482174643485,
+          25.0635692338051
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Abu Ayoub Al-Ansari School",
+        "name_en": "مدرسة ابو ايوب الأنصاري",
+        "source_name": "مدرسة ابو ايوب الأنصاري | Abu Ayoub Al-Ansari School",
+        "description": "(يوم الأحد والخميس فقط) (Thursday and Saturday Only) 4:00pm",
+        "source_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3440342696789,
+          25.342424989285
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Opposite of Khorfakkan Ladies Club",
+        "name_en": "مقابل نادي سيدات خورفكان",
+        "source_name": "مقابل نادي سيدات خورفكان | Opposite of Khorfakkan Ladies Club",
+        "description": "(يوم الأحد والخميس فقط) (Thursday and Saturday Only) 4:00pm",
+        "source_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.2674183270893,
+          25.6098477773593
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Next to Dibba Al-Hisn Club",
+        "name_en": "بجانب نادي دبا الحصن",
+        "source_name": "بجانب نادي دبا الحصن | Next to Dibba Al-Hisn Club",
+        "description": "(يوم الأحد والخميس فقط) (Thursday and Saturday Only) 4:00pm",
+        "source_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.2080110925404,
+          24.9489365886834
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Wadi El Helou Ladies Club",
+        "name_en": "نادي سيدات وادي الحلو",
+        "source_name": "نادي سيدات وادي الحلو | Wadi El Helou Ladies Club",
+        "description": "6:55 am",
+        "source_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3491815667772,
+          25.0217240851278
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Parking area of Social Services Kalba Branch",
+        "name_en": "مواقف دائرة الخدمات الإجتماعية فرع كلباء",
+        "source_name": "مواقف دائرة الخدمات الإجتماعية فرع كلباء | Parking area of Social Services Kalba Branch",
+        "description": "6:55 am",
+        "source_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3546394653669,
+          25.0531832321008
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Sidra Park Kalba",
+        "name_en": "حديقة السدرة كلباء",
+        "source_name": "حديقة السدرة كلباء | Sidra Park Kalba",
+        "description": "7:00 am",
+        "source_order": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3556043718599,
+          25.0675917019381
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Amr Ibn Al-Aas Street",
+        "name_en": "شارع عمرو بن العاص",
+        "source_name": "شارع عمرو بن العاص | Amr Ibn Al-Aas Street",
+        "description": "7:05 am",
+        "source_order": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3562153874858,
+          25.0761641637683
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Next to Kalba English School",
+        "name_en": "بجانب مدرسة كلباء الإنجليزية",
+        "source_name": "بجانب مدرسة كلباء الإنجليزية | Next to Kalba English School",
+        "description": "7:05 am",
+        "source_order": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3585154923102,
+          25.0842270942198
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Kalba Public Beach Park",
+        "name_en": "حديقة الشاطى العام كلباء",
+        "source_name": "حديقة الشاطى العام كلباء | Kalba Public Beach Park",
+        "description": "7:15 am",
+        "source_order": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.358456198506,
+          25.0965289175038
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Opposite of Al-Adl Mosque",
+        "name_en": "مقابل مسجد العدل",
+        "source_name": "مقابل مسجد العدل | Opposite of Al-Adl Mosque",
+        "description": "7:15 am",
+        "source_order": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3550934060941,
+          25.3946332440036
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Al-Lulayyah Park",
+        "name_en": "حديقة اللؤلؤية",
+        "source_name": "حديقة اللؤلؤية | Al-Lulayyah Park",
+        "description": "6:55 am",
+        "source_order": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3566636888846,
+          25.4039830024859
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Zubara Park",
+        "name_en": "حديقة زبارة",
+        "source_name": "حديقة زبارة | Zubara Park",
+        "description": "7:10 am",
+        "source_order": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3359468349943,
+          25.3984821830833
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Atika School",
+        "name_en": "مدرسة عاتكة (الحراي)",
+        "source_name": "مدرسة عاتكة (الحراي) | Atika School",
+        "description": "7:15 am",
+        "source_order": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3478990442977,
+          25.3715773622375
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Al-Metalaa Park",
+        "name_en": "حديقة المطلع",
+        "source_name": "حديقة المطلع | Al-Metalaa Park",
+        "description": "7:20 am",
+        "source_order": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3494023317855,
+          25.3574970980522
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Al-Dar Medical Center",
+        "name_en": "مركز الدار الطبي",
+        "source_name": "مركز الدار الطبي | Al-Dar Medical Center",
+        "description": "7:22 am",
+        "source_order": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3510772976558,
+          25.354629144517
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Dubai Islamic Bank",
+        "name_en": "بنك دبي الإسلامي",
+        "source_name": "بنك دبي الإسلامي | Dubai Islamic Bank",
+        "description": "7:22 am",
+        "source_order": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3483348277083,
+          25.3437964434165
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Omar Ibn Alkhattab Mosque",
+        "name_en": "مسجد عمر بن الخطاب",
+        "source_name": "مسجد عمر بن الخطاب | Omar Ibn Alkhattab Mosque",
+        "description": "7:25 am",
+        "source_order": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3484953503219,
+          25.3391090697439
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Next to Awf Bin Harith School",
+        "name_en": "بجانب مدرسة عوف بن حارث",
+        "source_name": "بجانب مدرسة عوف بن حارث | Next to Awf Bin Harith School",
+        "description": "7:30 am",
+        "source_order": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3481709626776,
+          25.3357110112722
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Next to Etisalat Building",
+        "name_en": "بجانب مبنى إتصالات",
+        "source_name": "بجانب مبنى إتصالات | Next to Etisalat Building",
+        "description": "7:35 am",
+        "source_order": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.3453266494913,
+          25.3289464699498
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Khorfakkan Comprehensive Police Station",
+        "name_en": "مركز شرطة خورفكان الشامل",
+        "source_name": "مركز شرطة خورفكان الشامل | Khorfakkan Comprehensive Police Station",
+        "description": "7:40 am",
+        "source_order": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.2674052,
+          25.6098427
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "Next to Dibba Al-Hisn Club",
+        "name_en": "بجانب نادي دبا الحصن",
+        "source_name": "بجانب نادي دبا الحصن | Next to Dibba Al-Hisn Club",
+        "description": "7:00 am",
+        "source_order": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.0002777777778,
+          25.3698888888889
+        ]
+      },
+      "properties": {
+        "source_group": "المنطقة الشرقية",
+        "name_ar": "أمام حديقة الخروص",
+        "name_en": "In front of Al Khoros Park‎ ‎",
+        "source_name": "In front of Al Khoros Park‎ ‎ | أمام حديقة الخروص",
+        "description": "6:45 am",
+        "source_order": 22
+      }
+    }
+  ]
+}

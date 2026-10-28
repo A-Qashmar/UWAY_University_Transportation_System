@@ -9,6 +9,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_map: ^8.3.2
+  geolocator: ^12.0.0
+  http: ^1.6.0
+  http_parser: ^4.1.0
+  image_picker: ^1.1.2
+  latlong2: ^0.10.1
+  signalr_core: ^1.1.2
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +24,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    # The whole folder: drop uos-logo.png here to show the University of Sharjah
+    # logo on campus stops (a school icon is used until then).
+    - assets/
