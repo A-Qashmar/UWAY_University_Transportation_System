@@ -1,31 +1,68 @@
-# Phase 2 Setup Guide
+# Setup and Operations Guide
 
-The Gantt schedules initial setup for September 28–October 6 and PR2 for October 26–31, 2026. Its progress cells and displayed Today date are stale and need updating before the PR2 review:
+(This file keeps its original name `phase-2-setup.md` so existing links still work.)
 
-| Task | Planned dates | Foundation status |
+See the [README](../README.md) for the short quick start. This guide adds detail and troubleshooting.
+
+## 1. Prerequisites
+
+Git, .NET 9 SDK, Node.js 20+, Flutter SDK, Android platform tools (`adb`), Docker Desktop.
+
+## 2. Database
+
+```powershell
+cd database
+copy .env.example .env     # set POSTGRES_PASSWORD
+docker compose up -d --wait
+```
+
+PostgreSQL listens on `localhost:55432` (database `uway`, user `uway_app`, container `uway-postgres`).
+
+## 3. API environment
+
+```powershell
+$env:ASPNETCORE_ENVIRONMENT = "Development"
+$env:ConnectionStrings__UwayDatabase = "Host=localhost;Port=55432;Database=uway;Username=uway_app;Password=<your password>"
+```
+
+Outside Development also set `Uway__TokenKey` to a random string of at least 32 characters.
+
+## 4. First-time data
+
+With the API stopped, run in order:
+
+```powershell
+dotnet run --project backend/UWAY.Api -- --migrate
+dotnet run --project backend/UWAY.Api -- --import-source-stops
+dotnet run --project backend/UWAY.Api -- --seed-source-routes
+dotnet run --project backend/UWAY.Api -- --seed-test-users
+```
+
+Check the schema at any time with `--migration-status`. Re-run `--seed-test-users` after adding drivers.
+
+## 5. Run
+
+| Part | Command | Address |
 | --- | --- | --- |
-| Repository and development environment setup | Sep 28–Oct 2 | Repository structure and setup docs prepared; GitHub remote still needs team account/repository |
-| Backend and database setup | Sep 29–Oct 5 | PostgreSQL Compose setup, EF Core schema/migrations, database health check, and route/stop/fleet/trip APIs are implemented |
-| Initial mobile and Admin project structure | Sep 30–Oct 6 | Flutter single-app structure and React/Vite shell prepared |
+| API | `dotnet run --project backend/UWAY.Api --urls http://0.0.0.0:5251` | `http://localhost:5251`, `/health` |
+| Admin | `cd admin; npm install; npm run dev` | `http://localhost:5173` |
+| Mobile | `cd mobile; adb reverse tcp:5251 tcp:5251; flutter run` | phone |
 
-## Current practical prototype status
+## 6. Troubleshooting
 
-The React Admin dashboard has forms for stops, routes, buses, drivers, and trips. The Passenger app was observed on Android with a PostgreSQL-backed scheduled trip: it loaded the trip and route stops, created and changed a Trip Intent drop-off, cancelled the intent, and loaded the empty inbox. The Driver screen and assigned-trip API exist in source; the API already running on 5251 is older and returns 404 for GET /api/trips/assigned, while the current-source build on 5252 returns only trips assigned to the Driver ID. A fresh Driver APK and live start/end check remain.
+| Symptom | What to check |
+| --- | --- |
+| `/health` reports the database as unreachable | Docker container running? Password in the connection string matches `database\.env`? |
+| Phone cannot reach the API | `adb devices` lists the phone; run `adb reverse tcp:5251 tcp:5251` again after reconnecting USB; API started with `--urls http://0.0.0.0:5251` |
+| Login says invalid credentials | Run `--seed-test-users`; password is `Uway@2026` |
+| A driver has no account | Run `--seed-test-users` again |
+| Map is slow on the phone | Use `flutter run --profile` instead of debug |
+| Admin cannot sign in or load data | API running? `VITE_UWAY_API_URL` correct? |
 
-For local demonstration, keep PostgreSQL and the API on the existing verified ports: PostgreSQL `55432`, API `5251`. Set `Uway__EnableDevelopmentHeaderAuthentication=true` only in Development. The Admin web app currently permits `http://localhost:5173`; the Flutter Android emulator uses `adb reverse tcp:5251 tcp:5251`. Development headers are not production sign-in.
+## 7. Removing demonstration data
 
-The frontend has since been extended with Admin record editing/deletion, trip cancellation, search and status filters, an active-trip map with capacity status, an OpenStreetMap Passenger tracking view, and opt-in foreground Driver GPS. The source-stop map remains in the Admin dashboard. A new Flutter dependency resolution/build and live verification of GPS, SignalR on-device behavior, and notification read-state are still required. No database fields or migrations were added for these UI changes.
+`dotnet run --project backend/UWAY.Api -- --remove-demo-routes` previews what would be deleted; add `--confirm` to delete. The four main routes, buses, drivers, stops and accounts are never touched. Development only.
 
-The schema covers routes, stops, buses, drivers, trips, and Trip Intent. Management endpoints cover routes, stops, buses, and drivers. Scheduled trips support driver start/end, reasoned delays and cancellation, and guarded state transitions. Passengers can create and cancel their own Trip Intent, select a route stop for drop-off, and change that stop until the trip ends. The active intent count provides an expected rider count; it is not a seat reservation or boarding confirmation. Capacity status uses that count against assigned bus capacity: 80% is nearly full, equality is full, and a larger count is over capacity. The assigned driver can store a timestamped near-full report during an in-progress trip.
+## 8. Git hygiene
 
-Passenger trip browsing uses the existing read-only `GET /api/trips` and `GET /api/trips/{id}` actions. Passengers see Scheduled and Started trips plus Finished trips from the last 14 days; delays and cancellations are alerts on the trip, not statuses. Passenger responses hide driver and bus assignment identifiers. Admins retain full trip reads and assigned Drivers retain their existing detail access. These permissions do not permit passengers to create, change, delete, start, delay, end, or cancel trips. Route/stop GET and live-location GET/SignalR access remain available to authorized Passengers independently of Trip Intent.
-
-For live tracking, an assigned Driver can send a latitude and longitude while their trip is in progress. PostgreSQL stores only that trip's latest location and the API receive timestamp. Any authorized Passenger can read and subscribe to the current point for an in-progress trip, whether or not they have an active Trip Intent. The assigned Driver and Admins can also read/subscribe under their existing rules. The SignalR hub at `/hubs/trip-locations` provides authorized trip subscriptions and sends `LocationUpdated` after a valid location is saved. Trip Intent is separate: it affects expected rider count and future passenger-specific notifications, not location access. The REST GET endpoint remains the recovery path after reconnecting; no location history or simulated GPS is used. Development-only loopback headers remain the only local identity mechanism; they are not safe for deployment. Keep further schema and API changes aligned with the agreed report.
-
-The notification foundation stores a passenger inbox in PostgreSQL. Trip start, delay, cancellation, and completion events create entries for active Trip Intents. A cancelled intent does not receive later events. After a real Driver location update, the API checks the passenger's selected route stop; if the stop has coordinates and is within 500 meters, it creates one approaching-stop notification for that intent/stop. The unique intent/event key prevents duplicates. Passengers retrieve their own inbox with `GET /api/notifications` and can mark an entry read. The Android inbox empty state was observed, but delivery and mark-as-read were not exercised in this review. This is persisted API delivery, not push delivery. Live-location access remains available to authorized Passengers regardless of Trip Intent.
-
-### Source map and database import status
-
-The Admin source map uses the provided GeoJSON without changing coordinates or drawing route lines. The API is prepared to retain each imported point's original `SourceGroup` and a stable `SourceKey` based on group, original source name, and six-decimal coordinates. The migration adds only nullable columns and a unique nullable key index, leaving existing Stops and route links intact. The Stops response adds nullable `sourceGroup` without changing request payloads.
-
-The Development-only importer is insert-only and explicitly invoked after the migration; it reports valid, added, existing, duplicate, and invalid counts, skips repeated source points and exact untagged manual-stop matches, and never modifies/deletes existing records or creates route-stop order. The API project packages the GeoJSON beside its build/publish output, preferring `data/source-map/` and falling back to the current project-root file or Admin static copy. At the time of this review, `data/source-map/` is absent; the root GeoJSON and Admin copy are byte-identical. Neither migration nor import has been applied/run against the current database. No source group is linked to a Route until confirmed route direction and stop sequence are supplied.
+Do not commit `.env` files, database dumps (`*.sql`), `_backup_*` folders, Word lock files (`~$*.docx`), or build output.

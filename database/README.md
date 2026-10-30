@@ -24,3 +24,15 @@ dotnet run --project backend/UWAY.Api
 The migration command exits after applying pending migrations. Normal API startup does not change the schema. The `/health` endpoint reports unhealthy when PostgreSQL cannot be reached.
 
 For non-local environments, provide the connection string through a secret store or the `ConnectionStrings__UwayDatabase` environment variable. Do not commit `database/.env` or real credentials.
+
+## Seed data
+
+After `--migrate`, load the university stops and routes, then the test accounts (Development only):
+
+```powershell
+dotnet run --project backend/UWAY.Api -- --import-source-stops
+dotnet run --project backend/UWAY.Api -- --seed-source-routes
+dotnet run --project backend/UWAY.Api -- --seed-test-users
+```
+
+`--migration-status` shows applied migrations and any model drift without changing the database. Database dumps (`*.sql`) and backups must not be committed.
