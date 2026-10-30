@@ -635,7 +635,7 @@ function LoginPage({ onSignedIn, notice }) {
       setError(reason instanceof TypeError ? 'The server could not be reached. Is the API running?' : reason.message);
     } finally { setBusy(false); }
   };
-  return <main className="login-page"><form className="login-card" onSubmit={submit}>
+  return <main className="login-page"><img className="login-logo" src="/uway-logo.png" alt="UWAY" /><form className="login-card" onSubmit={submit}>
     <p className="eyebrow">UWAY ADMIN PORTAL</p>
     <h1>Sign in</h1>
     <p className="muted">Use your administrator account to manage routes, trips and reports.</p>

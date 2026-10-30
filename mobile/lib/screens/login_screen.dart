@@ -31,9 +31,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   // Login-only shades, built from the brand purple and gold.
-  static const _purpleTop = Color(0xFF6F52BD);
-  static const _purpleMid = Color(0xFF5B409F);
-  static const _purpleBottom = Color(0xFF45307F);
+  static const _background = Color(0xFF4A3589);
   static const _card = Color(0xFFFFFBF2);
   static const _field = Color(0xFFF4EFFC);
   static const _fieldBorder = Color(0xFFD9CDF0);
@@ -111,28 +109,11 @@ class _LoginScreenState extends State<LoginScreen> {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light,
       child: Scaffold(
-        backgroundColor: _purpleMid,
+        backgroundColor: _background,
         body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [_purpleTop, _purpleMid, _purpleBottom],
-            ),
-          ),
+          color: _background,
           child: Stack(
             children: [
-              // Soft gold circles that echo the logo without crowding the form.
-              Positioned(
-                top: -70,
-                right: -60,
-                child: _glow(220, const Color(0x26F3E6A8)),
-              ),
-              Positioned(
-                bottom: -90,
-                left: -70,
-                child: _glow(260, const Color(0x1FF3E6A8)),
-              ),
               SafeArea(
                 child: Center(
                   child: SingleChildScrollView(
@@ -150,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Center(
                               child: Image.asset(
                                 'assets/uway-logo-lockup.png',
-                                height: 170,
+                                height: 104,
                                 errorBuilder: (_, __, ___) => const Icon(
                                   Icons.directions_bus_filled_outlined,
                                   size: 96,
@@ -158,7 +139,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 22),
+                            const SizedBox(height: 18),
                             _formCard(textTheme),
                             if (widget.onDevelopmentMode != null) ...[
                               const SizedBox(height: 12),
@@ -184,14 +165,6 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-
-  Widget _glow(double size, Color color) => IgnorePointer(
-        child: Container(
-          width: size,
-          height: size,
-          decoration: BoxDecoration(shape: BoxShape.circle, color: color),
-        ),
-      );
 
   Widget _formCard(TextTheme textTheme) {
     final scheme = Theme.of(context).colorScheme;
